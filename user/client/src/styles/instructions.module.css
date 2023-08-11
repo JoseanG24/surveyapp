@@ -1,0 +1,31 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+  }
+  
+  .title {
+    color: rgb(19, 83, 221);
+  }
+  
+  .instructionsText {
+    padding: 40px;
+    font-size: larger;
+    text-align: left;
+  }
+  
+  .returnButton {
+    padding: 8px 16px;
+    background-color: rgb(18, 23, 223);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+  }

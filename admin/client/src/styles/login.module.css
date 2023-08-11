@@ -1,0 +1,96 @@
+/* Estilos base */
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: sans-serif;
+}
+
+.descriptionContainer,
+.login {
+  width: 45%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.logo {
+  width: 70%;
+}
+
+.descriptionContainer {
+  border-right: 2px dotted #000;
+}
+
+.loginH2 {
+  margin-top: 0;
+}
+
+.loginForm {
+  margin-top: 20px;
+}
+
+.loginLabel {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.loginInput {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: 2px solid rgb(19, 83, 221);
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: 2px solid rgb(19, 83, 221);
+}
+
+.loginButton {
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  background-color: rgb(19, 83, 221);
+}
+
+/* Estilos Responsive */
+
+/* Para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+  .main {
+    flex-direction: column;
+  }
+
+  .descriptionContainer,
+  .login {
+    width: 100%;
+  }
+
+  .descriptionContainer {
+    border-right: none;
+    margin-bottom: 20px;
+  }
+}
+
+/* Para pantallas medianas */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .descriptionContainer,
+  .login {
+    width: 50%;
+  }
+}
+
+/* Para pantallas grandes */
+@media screen and (min-width: 1025px) {
+  .descriptionContainer,
+  .login {
+    width: 45%;
+  }
+}

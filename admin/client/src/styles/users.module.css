@@ -1,0 +1,109 @@
+/* users.module.css */
+
+/* Estilos generales */
+
+body {
+  overflow-y: scroll;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  
+}
+
+.mainHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background-color: #f2f2f2;
+}
+
+.logout {
+  background-color: #ffffff;
+  color: #333333;
+  font-size: 14px;
+  border: 1.5px solid #333333;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.logout:hover {
+  background-color: #c31919;
+  color: #ffffff;
+}
+
+.body {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 24px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+/* Estilos de la tabla */
+.tableContainer {
+  margin-top: 16px;
+}
+
+.userTable {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #e2e2e2;
+}
+
+.userTable th,
+.userTable td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.userTable th {
+  background-color: #f2f2f2;
+}
+
+/* Estilos del campo de búsqueda */
+.searchContainer {
+  margin-top: 16px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.searchInput {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid #e2e2e2;
+  border-radius: 4px;
+}
+
+/* Estilos del título */
+.userList h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+/* Estilos de la lista de usuarios */
+.userList ul {
+  list-style: none;
+  padding: 0;
+}
+
+.userList li {
+  margin-bottom: 24px;
+  font-size: 16px;
+}
+
+.userList strong {
+  font-weight: bold;
+}
+

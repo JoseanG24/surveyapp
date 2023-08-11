@@ -1,0 +1,248 @@
+/* Estilos generales del encabezado */
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 13px;
+  background-color: #dfdfdf;
+  margin-left: 20px; 
+  margin-right: 20px; 
+  width: 100%; 
+  padding: 10px;
+  border-radius: 10px;
+}
+
+h4 {
+  cursor: pointer;  
+}
+
+h4:hover {
+  color: rgb(0, 157, 255);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#header img {
+  height: 90px;
+}
+
+#import {
+  padding: 16px;
+  border-radius: 3px;
+  border: 1px solid black;
+}
+
+#import:hover {
+  color: white;
+  background-color: rgb(0, 157, 255);
+  outline: 0.1px solid black;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 15px;
+}
+
+/* Estilos para los títulos de las secciones */
+.seccion h4 {
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos para los enlaces de las subsecciones */
+.sub {
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.sub a {
+  text-decoration: none;
+  color: gray;
+}
+
+.sub a:hover {
+  color: rgb(28, 198, 37);
+}
+
+
+.sub_list {
+  position: absolute;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.seccion.open .sub_list {
+  display: block;
+  background-color: rgb(237, 236, 236);
+  font-weight: bolder;
+}
+
+.sub_list {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+.sub_list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.sub_list li:before {
+  content: "-";
+  margin-right: 5px;
+}
+
+.sub_list li:last-child {
+  margin-bottom: 0;
+}
+
+
+.sub_list {
+  /* Estilos para las sublistas */
+  display: none;
+  /* ... */
+}
+
+.sub_list .sub {
+  /* Estilos para los elementos "sub" dentro de las sublistas */
+  display: block;
+  display: block;
+  margin: 4px; /* Ajusta el valor según la separación deseada */
+  /* ... */
+}
+
+.seccion {
+  position: relative;
+  width: 145px; 
+}
+
+.seccion.open .sub_list {
+  display: block;
+}
+
+.pop {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.popContent {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 900px;
+  max-height: 600px;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow-x: hidden;
+  cursor:context-menu;
+}
+
+
+
+.tableName {
+  text-decoration: underline;
+}
+  
+
+.tableName:active {
+  background-color: #004999;
+}
+
+.popContent input[type="text"] {
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.popButton {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.popButton:hover {
+  background-color: #555;
+}
+
+.popButton:last-child {
+  margin-right: 0;
+}
+
+.successMessageBackground {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction:column ;
+  justify-content: center;
+}
+
+.successMessageContent {
+  background-color: white;
+  width: 35%;
+  height: 20%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.cancelBtn {
+  position: relative;
+  right: 0;
+  background-color: rgb(195, 4, 4);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.loadingMessage {
+  color: rgb(0, 157, 255);
+  font-size: large;
+  padding: 10px;
+}
+

@@ -1,0 +1,109 @@
+/* Estilos adicionales para Activities */
+
+/* Contenedor principal */
+.main {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Encabezado */
+  .mainHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background-color: #f2f2f2;
+  }
+  
+  .logout {
+    background-color: #ffffff;
+    color: #333333;
+    font-size: 14px;
+    border: 1.5px solid #333333;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .logout:hover {
+    background-color: #c31919;
+    color: #ffffff;
+  }
+  
+  /* Cuerpo */
+  .body {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 24px;
+  }
+
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  
+  /* Contenedor de actividades */
+  .activityContainer {
+    margin-top: 16px;
+  }
+  
+  /* Barra de búsqueda */
+  .input {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Botones de filtro por tipo */
+  .typeButtons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 16px;
+  }
+  
+  .typeButton {
+    background-color: #ffffff;
+    color: #333333;
+    font-size: 14px;
+    border: 1.5px solid #333333;
+    padding: 6px 12px;
+    margin-right: 8px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .typeButton.active {
+    background-color: rgb(28, 198, 37);
+    color: #ffffff;
+  }
+  
+  /* Contenedor de actividades filtradas */
+  .activities {
+    margin-top: 16px;
+  }
+  
+  /* Actividad individual */
+  .activity {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 8px;
+  }
+  
+  .activityTitle {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  
+  .activityDescription {
+    font-size: 14px;
+    color: #555555;
+  }
+  

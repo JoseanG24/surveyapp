@@ -1,0 +1,83 @@
+/* home.module.css */
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 86vh;
+}
+
+.header {
+  background-color: whitesmoke;
+  color: rgb(104, 103, 103);
+  width: 32em;
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.title {
+  margin: 0;
+
+}
+
+.logo {
+  width: 14%;
+  position: absolute;
+  top: 10px;
+  left:10px
+}
+
+.title span {
+  color:rgb(28, 198, 37);
+}
+
+.optionContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 50px;
+}
+
+.instructions,
+.activities,
+.surveys {
+  background-color: rgb(230, 229, 229);
+  border: none;
+  color: rgb(19, 83, 221);
+  border-radius: 30px;
+  width: 30em;
+  font-weight: bold;
+  text-align: left;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  height: 3em;
+  margin: 15px;
+  text-decoration: none;
+}
+
+.instructions:active,
+.activities:active,
+.surveys:active {
+  background-color: rgb(19, 83, 221);
+  color: rgb(230, 229, 229);
+}
+
+.logout {
+  padding: 8px 16px;
+  background-color: rgb(18, 23, 223);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.logout:hover {
+  background-color: red;
+}
