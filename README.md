@@ -1,5 +1,5 @@
 # surveyapp
-A solo project made by me during an internship program
+A solo project made by me during an internship program (Not completely finished)
 
 the technologies used are React JS, Node JS and SQL SERVER
 
@@ -10,3 +10,4 @@ Then there is the client app which is the survey itself. If there is an active s
 case will be a worker at an x company, will be completing his/hers daily tasks and timing them by pressing them on the application. 
 
 The data collected is then used to perform an activity-based costing (ABC) analysis.
+ 
